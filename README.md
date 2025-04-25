@@ -17,14 +17,20 @@ Session Management: express-session
 Packaging: pkg (for Windows .exe)
 
 🧩 **System Overview**
+
 This system is built according to a detailed UML diagram and supports:
 🧑‍💼 Administrator and 🧑‍💻 Non-Admin Users (via iFINANCEUser inheritance)
+
 🔐 Secure login with password encryption
+
 💳 Double-entry transaction system
+
 📁 Group and category-based account management
+
 📊 Auto-generated financial reports (Trial Balance, P&L, Balance Sheet)
 
 📂 **Folder Structure**
+
 php
 Copy
 Edit
@@ -40,15 +46,23 @@ Edit
 👥 **User Roles**
 
 Feature	Admin	Non-Admin
+
 View/Create/Delete Users	      ✅	  ❌
+
 Create Transactions	            ✅	  ✅
+
 Access All Reports	            ✅	  ❌
+
 Change Own Password	            ✅	  ✅
+
 Manage Chart of Accounts	      ✅	  ❌
+
 Access Account Group Hierarchy	✅	  ❌
 
 🧪 **Sample Login Credentials**
+
 Admin: admin / admin123
+
 User: user / admin123
 
 Password hash generated with bcrypt.
