@@ -15,7 +15,22 @@ A modern, full-stack financial management system with secure role-based access, 
 
 ## Project Structure
 
-├── app.js # Main server file ├── routes/ # Express routes (auth, dashboard, etc.) │ ├── auth.js │ ├── dashboard.js │ ├── reports.js │ └── transactions.js ├── views/ # EJS templates │ ├── admin.ejs │ ├── user.ejs │ └── transactions.ejs ├── public/ # Static assets (CSS, logo, JS) │ └── styles.css ├── config/ │ └── db.js # MySQL database connection ├── package.json └── README.md
+├── app.js # Main server file
+├── routes/ # Express routes (auth, dashboard, etc.)
+│ ├── auth.js
+│ ├── dashboard.js
+│ ├── reports.js
+│ └── transactions.js
+├── views/ # EJS templates
+│ ├── admin.ejs
+│ ├── user.ejs
+│ └── transactions.ejs
+├── public/ # Static assets (CSS, logo, JS)
+│ └── styles.css
+├── config/
+│ └── db.js # MySQL database connection
+├── package.json
+└── README.md
 
 yaml
 Copy
@@ -57,7 +72,7 @@ node app.js
 
 # 3. Visit in browser
 http://localhost:3000
-Bonus Features
+##Bonus Features
 Floating help assistant for user onboarding
 
 Transaction export to CSV
@@ -68,7 +83,7 @@ Password expiry logic (configurable)
 
 Clean and modern UI with Bootstrap and gradients
 
-Build as .exe (optional)
+##Build as .exe (optional)
 Use pkg to bundle:
 
 bash
@@ -78,7 +93,7 @@ npm install -g pkg
 pkg .
 This will produce a standalone executable: ifinance.exe
 
-Designed For Learning
+##Designed For Learning
 This system is designed to reflect real-world accounting logic while remaining lightweight and easy to understand.
 
 MVC structure
@@ -89,10 +104,10 @@ Secure session handling
 
 Reusable UI components
 
-License
+##License
 MIT — open to use, remix, and improve.
 
-Author
+##Author
 Developed by Group 10
 CS4320 Software Engineering Project · University of Missouri
 2025
