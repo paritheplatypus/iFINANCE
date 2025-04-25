@@ -1,99 +1,121 @@
-# iFINANCE
+# 💼 iFINANCE – Web-Based Accounting System
 
-📊 **iFINANCE System — Web-Based Accounting Platform**
-A full-featured, role-based financial management system built with Node.js, Express, MySQL, and EJS, designed to simulate a real-world accounting application with users, accounts, transactions, and reporting.
+A modern, full-stack financial management system with secure role-based access, real-time reporting, double-entry bookkeeping, and a clean dashboard UI — built for both realism and learning.
 
-🔧 **Technologies Used**
-Backend: Node.js, Express
+---
 
-Frontend: EJS Templates, Bootstrap CSS
+## 🚀 Tech Stack
 
-Database: MySQL
+| Frontend   | Backend     | Database | Features                       |
+|------------|-------------|----------|--------------------------------|
+| EJS, CSS3  | Express.js  | MySQL    | Auth, Sessions, CSV Export     |
+| Bootstrap  | Node.js     | MySQL2   | Reports, Transactions, Charts  |
 
-Encryption: bcryptjs
+---
 
-Session Management: express-session
+## 📂 Project Structure
 
-Packaging: pkg (for Windows .exe)
-
-🧩 **System Overview**
-
-This system is built according to a detailed UML diagram and supports:
-🧑‍💼 Administrator and 🧑‍💻 Non-Admin Users (via iFINANCEUser inheritance)
-
-🔐 Secure login with password encryption
-
-💳 Double-entry transaction system
-
-📁 Group and category-based account management
-
-📊 Auto-generated financial reports (Trial Balance, P&L, Balance Sheet)
-
-📂 **Folder Structure**
-
-php
-Copy
-Edit
-├── app.js
-├── launcher.js          # Used for packaging into .exe
-├── public/              # Static files (styles.css, logo.png)
-├── routes/              # Express route files (auth.js, dashboard.js, reports.js)
-├── views/               # EJS templates (login, dashboard, reports, user, admin)
+```
+├── app.js                    # Main server file
+├── routes/                   # Express routes (auth, dashboard, etc.)
+│   ├── auth.js
+│   ├── dashboard.js
+│   ├── reports.js
+│   └── transactions.js
+├── views/                    # EJS templates
+│   ├── admin.ejs
+│   ├── user.ejs
+│   └── transactions.ejs
+├── public/                   # Static assets (CSS, logo, JS)
+│   └── styles.css
 ├── config/
-│   └── db.js            # MySQL connection config
+│   └── db.js                 # MySQL database connection
 ├── package.json
+└── README.md
+```
 
-👥 **User Roles**
+---
 
-Feature	Admin	Non-Admin
+## 👥 User Roles
 
-View/Create/Delete Users	      ✅	  ❌
+| Feature                           | Admin | Non-Admin |
+|----------------------------------|:-----:|:---------:|
+| View/Create/Delete Users         | ✅    | ❌        |
+| Create Transactions              | ✅    | ✅        |
+| View Financial Reports           | ✅    | ✅        |
+| Change Own Password              | ✅    | ✅        |
+| Manage Chart of Accounts         | ✅    | ❌        |
+| Access Account Group Hierarchy   | ✅    | ❌        |
+| Export Transactions (CSV)        | ✅    | ✅        |
 
-Create Transactions	            ✅	  ✅
+---
 
-Access All Reports	            ✅	  ❌
+## 🧪 Sample Logins
 
-Change Own Password	            ✅	  ✅
+| Role  | Username | Password  |
+|-------|----------|-----------|
+| Admin | admin    | admin123  |
+| User  | user     | admin123  |
 
-Manage Chart of Accounts	      ✅	  ❌
+---
 
-Access Account Group Hierarchy	✅	  ❌
+## 🔧 Run Locally
 
-🧪 **Sample Login Credentials**
-
-Admin: admin / admin123
-
-User: user / admin123
-
-Password hash generated with bcrypt.
-
-⚙️ **Run Locally**
-bash
-Copy
-Edit
+```bash
+# 1. Install dependencies
 npm install
+
+# 2. Start the app
 node app.js
-Then visit: http://localhost:3000
 
-💡 **Compile as Executable (Optional)**
-bash
-Copy
-Edit
+# 3. Visit in browser
+http://localhost:3000
+```
+
+---
+
+## 📤 Bonus Features
+
+- ✅ Floating help assistant for user onboarding
+- ✅ Transaction export to CSV
+- ✅ Profit & Loss and Trial Balance with visuals
+- ✅ Password expiry logic (configurable)
+- ✅ Clean and modern UI with Bootstrap & gradients
+
+---
+
+## 📦 Build as .exe (optional)
+
+Use [`pkg`](https://github.com/vercel/pkg) to bundle:
+
+```bash
+npm install -g pkg
 pkg .
-Creates ifinance.exe — double-click to launch app and browser.
+```
 
-📈 **Bonus Features You Can Add**
-Chart.js dashboards (P&L and trial balance visualized)
-Built-in chatbot for accounting help
-User audit trail
-CSV export for reports
-Password expiry notifications
+> Produces a standalone executable: `ifinance.exe`
 
-🧠 **Designed for Realism**
-Fully matches UML class model
-Implements database inheritance
-Follows MVC architecture
-Includes full CRUD operations
-Uses real accounting logic
+---
 
-**© 2025 Pari Patel**
+## 🧠 Designed For Learning
+
+This system is designed to reflect real-world accounting logic while remaining lightweight and easy to understand.
+
+- ✅ MVC structure
+- ✅ SQL normalization
+- ✅ Secure session handling
+- ✅ Reusable UI components
+
+---
+
+## 📜 License
+
+MIT — open to use, remix, and improve.
+
+---
+
+## 👤 Author
+
+Developed by **Pari Patel** and team  
+CS4320 Software Engineering Project · University of Missouri  
+2025
