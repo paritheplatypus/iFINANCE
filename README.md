@@ -5,10 +5,15 @@ A full-featured, role-based financial management system built with Node.js, Expr
 
 🔧 **Technologies Used**
 Backend: Node.js, Express
+
 Frontend: EJS Templates, Bootstrap CSS
+
 Database: MySQL
+
 Encryption: bcryptjs
+
 Session Management: express-session
+
 Packaging: pkg (for Windows .exe)
 
 🧩 **System Overview**
