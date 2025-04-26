@@ -15,28 +15,7 @@ A modern, full-stack financial management system with secure role-based access, 
 
 ## 📂 Project Structure
 
-```
-├── app.js                    # Main server file
-├── routes/                   # Express routes (auth, dashboard, etc.)
-│   ├── auth.js
-│   ├── dashboard.js
-│   ├── reports.js
-│   └── transactions.js
-├── views/                    # EJS templates
-│   ├── admin.ejs
-│   ├── user.ejs
-│   └── transactions.ejs
-├── public/                   # Static assets (CSS, logo, JS)
-│   └── styles.css
-├── config/
-│   └── db.js                 # MySQL database connection
-├── package.json
-└── README.md
-```
 ![image](https://github.com/user-attachments/assets/8ac788b3-32d0-46b0-9b4d-7827426bbab3)
-
-
----
 
 ## 👥 User Roles
 
