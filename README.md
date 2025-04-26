@@ -33,6 +33,8 @@ A modern, full-stack financial management system with secure role-based access, 
 ├── package.json
 └── README.md
 ```
+![image](https://github.com/user-attachments/assets/8ac788b3-32d0-46b0-9b4d-7827426bbab3)
+
 
 ---
 
@@ -40,13 +42,13 @@ A modern, full-stack financial management system with secure role-based access, 
 
 | Feature                           | Admin | Non-Admin |
 |----------------------------------|:-----:|:---------:|
-| View/Create/Delete Users         | ✅    | ❌        |
-| Create Transactions              | ✅    | ✅        |
-| View Financial Reports           | ✅    | ✅        |
-| Change Own Password              | ✅    | ✅        |
-| Manage Chart of Accounts         | ✅    | ❌        |
-| Access Account Group Hierarchy   | ✅    | ❌        |
-| Export Transactions (CSV)        | ✅    | ✅        |
+| View/Create/Delete Users         | ✅    | ❌       |
+| Create Transactions              | ❌    | ✅       |
+| View Financial Reports           | ❌    | ✅       |
+| Change Own Password              | ✅    | ✅       |
+| Manage Chart of Accounts         | ❌    | ✅       |
+| Access Account Group Hierarchy   | ❌    | ✅       |
+| Export Transactions (CSV)        | ❌    | ✅       |
 
 ---
 
@@ -54,8 +56,8 @@ A modern, full-stack financial management system with secure role-based access, 
 
 | Role  | Username | Password  |
 |-------|----------|-----------|
-| Admin | admin    | admin123  |
-| User  | user     | admin123  |
+| Admin | admin    | admin     |
+| User  | test     | test      |
 
 ---
 
@@ -72,16 +74,7 @@ node app.js
 http://localhost:3000
 ```
 
-## 📦 Build as .exe (optional)
+## 📦 Run as .exe (optional)
 
-Use [`pkg`](https://github.com/vercel/pkg) to bundle:
-
-```bash
-npm install -g pkg
-pkg .
-```
-
-> Produces a standalone executable: `ifinance.exe`
-
----
+Navigate to "C:\CS4320\Group10_iFINANCEAPP\dist\ifinance Setup 1.0.0.exe" and double-click to run.
 
